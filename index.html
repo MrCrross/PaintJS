@@ -10,7 +10,30 @@
 </head>
 
 <body>
-    <h1>Hello</h1>
+    <canvas id="jsCanvas" class="canvas" style="background-color: #ffffff;"></canvas>
+    <div class="controls">
+        <div class="controls__range">
+            <input id="jsRange" type="range" min="0.1" max="10.0" value="2.5" step="0.1" title='Карандаш' placeholder='Карандаш' />
+            <input id="jsRangeEraser" class="hidden" type="range" min="0.1" max="50.0" value="5.0" step="0.1" title='Ластик' placeholder='Ластик' />
+        </div>
+        <div class="controls__btns">
+            <button id="jsMode">Заливка</button>
+            <button id="jsClear">Отчистить</button>
+            <button id="jsEraser">Ластик</button>
+            <button id="jsSave">Сохранить</button>
+        </div>
+        <div id="jsColors" class="controls__colors">
+            <div class="controls__color active_color" style="background-color: #2c2c2c;"></div>
+            <div class="controls__color" style="background-color: #ffffff;"></div>
+            <div class="controls__color" style="background-color: #FF2B2B;"></div>
+            <div class="controls__color" style="background-color: #FF7518;"></div>
+            <div class="controls__color" style="background-color: #FFC618;"></div>
+            <div class="controls__color" style="background-color: #008000;"></div>
+            <div class="controls__color" style="background-color: #7DF9FF;"></div>
+            <div class="controls__color" style="background-color: #0000FF;"></div>
+            <div class="controls__color" style="background-color: #310062;"></div>
+        </div>
+    </div>
     <script src="./scripts/paint.js"></script>
 </body>
 
